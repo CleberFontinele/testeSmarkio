@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(226, 224, 224)
+}
+.screen {
+  display: flex;
+  height: 100vh;
+}
+
+.leftside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-cadastrar {
+  border-radius: 5px;
+  background: rgb(170, 168, 168);
+  width: 430px;
+}
+
+.rightside {
+  width: 500px;
+  background: #DDD;
+  padding: 50px;
+}
