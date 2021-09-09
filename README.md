@@ -4,8 +4,8 @@
 
 Foi desenvolvida uma aplicação em que o usuário escreve qualquer comentário na 
 caixa de texto do lado direito da página, que deve ser salva no banco de dados e
-ficar a amostra do lado esquerdo o usuário tem a opção de clicar no botão acima e
-ouvir um áudio do comentário que foi escrito.
+ficar a amostra do lado esquerdo, o usuário tem a opção de ouvir a leitura do comentário
+clicando no botão(ouvir) logo acima da frase.
 
 ### Frameworks usados no teste
 
