@@ -7,6 +7,8 @@ caixa de texto do lado direito da página, que deve ser salva no banco de dados 
 ficar a amostra do lado esquerdo, o usuário tem a opção de ouvir a leitura do comentário
 clicando no botão(ouvir) logo acima da frase.
 
+![Getting Started](./img/pag.png)
+
 ### Frameworks usados no teste
 
 * express 

@@ -13,10 +13,10 @@
   </div>
   <div class="rightside">
     <h2>Comentários</h2>
-    {{!-- #each é como se fosse um for --}}
-    {{#each comentarios}} <br>
+    {{!-- possivel erro que não renderiza na tela --}}
+    {{#each comentarios as | comentario | }} <br>
     <input type="submit" value="ouvir">
-    <p>{{this}}</p> <br>
+    <p>{{comentario}}</p> <br>
     <hr>
     {{/each}}
   </div>

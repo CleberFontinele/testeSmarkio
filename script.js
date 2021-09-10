@@ -6,8 +6,6 @@ const Post = require('./models/Post')
 
 app.use(express.static('public'))
 
-// configurar handlebars -- template engine
-// main é o template da aplicação
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
@@ -17,7 +15,6 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
   Post.findAll({ order: [['id', 'DESC']] }).then((comentarios) => {
     res.render('formulario', { comentarios: comentarios })
-    // console.log(comentarios);
   })
 })
 
@@ -26,7 +23,7 @@ app.post('/', (req, res) => {
     comentarios: req.body.comentarios
   }).then(() => {
     console.log(req.body.comentarios);
-    // res.send('Post criado com sucesso!')
+    // talvez aqui tenha um erro ao redirecionar
     res.redirect('/')
     // res.send(req.body.comentarios)
   }).catch((erro) => {
